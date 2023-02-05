@@ -17,6 +17,9 @@ Cria uma tabela (tibble) a partir das etiquetas contidas em um arquivo de excel.
 Para planilhas de labels da Innovare no formato "Var/Val", acessa a aba "Val" e coloca as etiquetas na primeira coluna, os códgios na segunda coluna e os labels na terceira coluna
 }
 \examples{
-planilha <- system.file("extdata", "planilha.xlsx", package = "innoutils")
+planilha <- system.file("extdata", "planilha_etiquetas.xlsx", package = "innoutils")
 xl_etiquetas(arquivo = planilha)
+
+planilha_sl <- system.file("extdata", "planilha_etiquetas_semlabels.xlsx", package = "innoutils")
+xl_etiquetas(arquivo = planilha_sl)
 }

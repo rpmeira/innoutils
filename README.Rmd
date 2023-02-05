@@ -1,0 +1,47 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# innoutils
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+Esse pacotes é composto por diversas funções que visam facilitar algumas tarefas envolvidas no processamento de dados na Innovare.
+
+## Installation
+
+Você pode instalar a versão em desenvolvimento do `innoutils` direto do github com:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("rpmeira/innoutils")
+```
+
+## Exemplos
+
+Como utilizar a função `xl_etiquetas` para extrair a relação de códigos e labels de uma planilha de excel (que utilize etiquetas)
+
+```{r example}
+library(innoutils)
+
+# Exemplo quando há uma coluna com os códiigos e uma coluna com os labels
+planilha <- system.file("extdata", "planilha_etiquetas.xlsx", package = "innoutils")
+xl_etiquetas(arquivo = planilha)
+
+# Exemplo quando há apenas  a coluna com os códigos (as etiquetas sempre ficam nessa mesma coluna, em cima dos seus respectivos cógios)
+planilha_sl <- system.file("extdata", "planilha_etiquetas_semlabels.xlsx", package = "innoutils")
+xl_etiquetas(arquivo = planilha_sl)
+```
+
