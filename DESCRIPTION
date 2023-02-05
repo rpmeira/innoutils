@@ -1,0 +1,17 @@
+Package: innoutils
+Type: Package
+Title: Funções Gerais para Processamento na Innovare
+Version: 0.1.0
+Author: Rafael Peixoto
+Maintainer: Rafael Peixoto <peixoto.rafaelf@outlook.com>
+Description: Esse pacotes é composto por diversas funções que visam facilitar algumas  tarefas envolvidas no processamento de dados na Innovare.
+License: MIT + file LICENSE
+Imports:
+    magrittr,
+    dplyr,
+    stringr,
+    tibble,
+    openxlsx
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
