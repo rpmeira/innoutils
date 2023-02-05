@@ -9,7 +9,7 @@
 Esse pacotes é composto por diversas funções que visam facilitar algumas
 tarefas envolvidas no processamento de dados na Innovare.
 
-## Installation
+## Instalação
 
 Você pode instalar a versão em desenvolvimento do `innoutils` direto do
 github com:
